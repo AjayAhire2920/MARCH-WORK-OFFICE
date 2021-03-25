@@ -1,1 +1,250 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Poppins" !important;
+    background-color: #f5f5f5;
+  }
+  
+  /* // Step 1 */
+  .wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .main-content {
+    width: 100%;
+    margin-left: 0px;
+    /* // transform: translateX(200px); */
+  }
+  #sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    background: #2f80cb;
+    z-index: 10;
+    height: 100vh;
+    margin-left: -200px;
+  }
+  
+  .main-content,
+  #sidebar {
+    transition: 0.4s ease;
+  }
+  
+  .icon-toggle {
+    color: #2f80cb;
+    font-size: 1.3em;
+  }
+  /* // Step 1 */
+  
+  /* // Step 2 */
+  #sidebar.active {
+    margin-left: 0px;
+  }
+  #sidebar.active ~ .main-content {
+    margin-left: 200px;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar {
+      margin-left: -250px;
+    }
+    #sidebar.active {
+      width: 200px;
+      margin-left: 0px;
+    }
+    .main-content {
+      margin-left: 0;
+    }
+   
+  }
+  /* // Step 2 */
+  /* //  the power of kepepet */
+  .fa-search {
+    margin-right: 10px;
+  }
+
+  .searchboxx{
+      position: relative;
+      
+  }
+  .fa-search{
+      position: absolute;
+      right: 5px;
+      bottom: 10px;
+  }
+  .fa-bell{
+      color: skyblue;
+      
+  }
+  .bellIcon{
+    position: relative;
+    display: inline;
+    
+  }
+  .notify{
+    
+    text-align: center;
+    justify-content: center;
+    font-size: x-small;    
+    position: absolute;
+    /* margin-left: auto; */
+    right: -7px;
+    top: -6px;
+    height: 15x;
+    width: 15px;     
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+  }
+  
+
+  .navbar{
+      padding-top: 0!important;
+  }
+
+  @media (min-width: 678px) { 
+
+    
+      .searchboxx{
+        position: relative;
+         
+      }
+      .fa-search{
+          position: absolute;
+      } 
+     
+   }
+ .border-left{
+   padding-left: 20px;
+ }
+
+ .card1{
+   border-left: 4px solid skyblue;   
+   height: 100px;
+ }
+
+.card-body{
+  padding: 15px;
+   
+}
+.monthText{
+  color: #2f80cb;
+}
+.body-para1{ 
+  font-weight: bold;
+}
+.amount{
+  font-weight:700;
+  font-size: x-large; 
+}
+.progress{
+  height: 10px;
+  padding-right: 0px;
+}
+.card2{
+   
+  height: 500px;
+  padding-left: 0;
+}
+#chartContainer{
+  height: 300px; width: 100%;
+}
+.serverBars{
+  height: 15px;
+}
+.serverBody{
+  margin-top: 35px;
+}
+.Illustration{
+  position: relative;
+}
+.img-fluid{ 
+  width: 25rem;
+}
+.card3{
+  height: 80px;
+  margin: 5px 0px;
+}
+.devePara{
+  line-height: 1.9rem;
+}
+.foot{
+  font-size: x-small;
+}
+
+.nav-tabs .nav-link{ border: transparent!important; border-bottom: 3px solid red;}
+.nav-tabs .nav-link.active {
+   color: violet!important;
+  border-bottom: 3px solid red!important;
+}
+ 
+.lb-dataContainer { 
+  position: absolute;
+  top: -43px;
+  right: 488px;}
+
+
+
+
+
+body {
+  background: #333;
+  color: #ddd;
+}
+@media (min-width: 768px) {
+  .multi-item-carousel .carousel-inner .carousel-item {
+    margin-right: inherit;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item,
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.33333333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item-next,
+  .multi-item-carousel .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .multi-item-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  .multi-item-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    display: block;
+    visibility: visible;
+  }
+}
+
+
+/* contact page styles */
+/* .contactImg{ position: relative;} */
+.contactImg img {  width: 400px; height: 250px; }
+

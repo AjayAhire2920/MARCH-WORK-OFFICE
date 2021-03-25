@@ -1,0 +1,218 @@
+ 
+
+<div class="wrapper"> 
+   
+    <nav id="sidebar" class="px-3 pt-3 pb-5">
+      <!-- Step 2 -->
+      <ul class="nav flex-column">
+       <li class="nav-item mb-4">
+          <h4>
+            <a class="nav-link font-weight-bold text-white" href="#">LOGO</a>
+          </h4>
+        </li>
+        <li class="nav-item my-2">
+          <a class="nav-link text-white" href="#">
+            <i class="fa fa-tachometer"></i>
+            Dashboard</a
+          >
+        </li>
+        <li class="nav-item my-2">
+          <a routerLink="../all-books" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" class="nav-link text-white" href="#">
+            <i class="fa fa-book"></i>
+            All Books</a
+          >
+        </li>
+         <li class="nav-item my-2">            
+          <a class="nav-link text-white" href="#">
+            <div class="dropdown">
+                <button class="btn btn-transparent text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 More +
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>                
+              </div></a>
+        </li>
+      </ul>
+      <!-- Step 2 -->
+    </nav>
+    <div class="main-content">
+      <nav class="navbar bg-light  ">
+   
+        <!-- <button type="button" id="sidebarCollapse" class="btn">
+          <i class="fa fa-align-left icon-toggle"></i>
+        </button> -->
+       
+           
+      
+
+      </nav>
+      <nav class="navbar shadow navbar-expand-lg navbar-light bg-light">       
+        <button type="button" id="sidebarCollapse" class="btn">
+            <i class="fa fa-align-left icon-toggle"></i>
+          </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">          
+          <form class="form-inline my-2 ml-auto boxx ">
+              <div class="searchboxx">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <i class="fa fa-search "></i>  
+              </div>
+           
+            <div class="mr-3 ml-3  bellIcon">
+                <i class="fa fa-bell  "></i>
+                <span class="notify">29</span>                
+                </div>
+                <div class="mr-3 ml-3  bellIcon">
+                  <i class="fa fa-envelope  "></i>
+                  <span class="notify">12</span>                
+                  </div>
+          </form>
+          <div class="mr-3 ml-3 border-left  UserLogin">
+            <p>Ajay Ahire <i class="fa fa-user ml-3"></i></p> 
+            </div>
+        </div>
+      </nav>
+      <section>
+        <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+            </div>
+          </nav> 
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div  class="container-fluid text-center">
+                    <div class="row  ">
+                        <div class="col-md-3  lightboxSize">
+                            <a href="../../assets/images/download (1).jpg" data-lightbox="gallery" data-title="It Not that hard bro ">
+                                <img src="../../assets/images/download (1).jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-3  lightboxSize">
+                            <a href="../../assets/images/download (1).jpg" data-lightbox="gallery" data-title="">
+                                <img src="../../assets/images/download (1).jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-3  lightboxSize">
+                            <a href="../../assets/images/download (1).jpg" data-lightbox="gallery" data-title="">
+                                <img src="../../assets/images/download (1).jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-3  lightboxSize">
+                            <a href="../../assets/images/download (1).jpg" data-lightbox="gallery" data-title="">
+                                <img src="../../assets/images/download (1).jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                       
+                        
+                    </div>
+                 </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                
+                <div class="container">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                      <div class="carousel-inner row w-100 mx-auto">
+                        <div class="carousel-item active col-md-4">
+                          <img src="../../assets/images/download (13).jpg" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="../../assets/images/download (13).jpg" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/9c27b0/000000?text=3" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/673ab7/000000?text=4" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/4caf50/000000?text=5" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/8bc34a/000000?text=6" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/ffffff/000000?text=7" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="https://via.placeholder.com/300/000000/ffffff?text=8" class="img-fluid mx-auto d-block">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+         
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                <div class=" jumbotron m-4">
+                    
+                <div class="Contact-header text-center">
+                    <h2>Have Some Questions ?</h2>                    
+                </div>
+                <div class="text-center">
+                    <span class="mr-3"><i class="fa fa-globe ">MOLDVOA</i></span>
+                    <span><a href="https://www.google.com">UK:</a>Strada  31 Aug 1998 .</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 contactImg mt-4 text-center">
+                        <span>
+                            <img class="img-fluid" src="../../assets/images/Blog_Budget_Templates_blog_envelope_725x485.png" alt="Envelope">
+                        </span>
+                    </div>
+                    <div class="col-md-6 contactForm mt-4">
+                            <form action="" class="m-4 pl-4 pr-4">
+                               <div class="form-group">
+                                <input type="text"   placeholder="First Name" class="form-control">
+                               </div>
+                               <div class="form-group">
+                                <input type="text"   placeholder="Last Name" class="form-control">
+                               </div>
+                               <div class="form-group">
+                                <input type="text"   placeholder="Email ?" class="form-control">
+                               </div>
+                               <div class="form-group">
+                                <textarea type="text"  rows="3"  placeholder="Write..."  class="form-control"></textarea>
+                               </div>
+                               <div>  <button class="btn btn-primary text-center form-control" type="submit">Send Message</button></div>
+                            </form>
+                    </div>
+                </div>
+                </div>
+             
+            </div>
+
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+            </div>
+          </div>
+       
+    </section>
+
+      <section>	
+
+    </section>
+      
+  </div>
+
+
+
+
+
+  

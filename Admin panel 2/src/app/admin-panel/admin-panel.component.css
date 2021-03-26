@@ -1,0 +1,10 @@
+.media-objects .media i{ color: rgb(107, 174, 233);  }
+.media-objects .media { border-left: 2px solid rgb(171, 152, 202);}
+ .barclass span{ font-size: 14px; font-weight: 500;}
+.progress{ height: 10px; border-radius: 0px;  }
+.settingIcon i{ margin-right: 12px; color: grey;}
+#chartId{
+     
+     width: 400px;
+     height: 400px;
+}
